@@ -5,7 +5,7 @@ $(function() {
     $(".eat-burger").on("click", function(event) {
       var id = $(this).data("id");
       var newDevoured = $(this).data("newdevour");
-      alert(id)
+      
       
   
       // Send the PUT request.
@@ -28,7 +28,7 @@ $(function() {
       var newBurger = {
         burger_name: $("#bg").val().trim(),
       };
-      alert(newBurger.burger_name)
+      
   
       // Send the POST request.
       $.ajax("/api/burgers", {
